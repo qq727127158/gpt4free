@@ -44,6 +44,8 @@
     </script>
     <script src="/static/js/highlight.min.js"></script>
     <script>window.conversation_id = "{{chat_id}}"</script>
+    <!-- 引入不蒜子计数 -->
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     <title>g4f - gui</title>
 </head>
 
@@ -68,20 +70,18 @@
                     <i class="fa-solid fa-toolbox"></i>
                     <span>Open Settings</span>
                 </button>
-                <div class="info">
-                    <i class="fa-brands fa-discord"></i>
-                    <span class="convo-title">discord ~ <a href="https://discord.gg/XfybzPXPH5">discord.gg/XfybzPXPH5</a>
-                    </span>
+                <div>
+                浏览量：<span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span>👀 </br> 访客数：<span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span>👦
                 </div>
-                <div class="info">
-                    <i class="fa-brands fa-github"></i>
-                    <span class="convo-title">github ~ <a href="https://github.com/xtekky/gpt4free">@xtekky/gpt4free</a>
-                    </span>
-                </div>
-                <div class="info">
-                    <i class="fa-solid fa-star"></i>
-                    <span id="version_text" class="convo-title"></span>
-                </div>
+{#                <div class="info">#}
+{#                    <i class="fa-brands fa-github"></i>#}
+{#                    <span class="convo-title">github ~ <a href="https://github.com/xtekky/gpt4free">@xtekky/gpt4free</a>#}
+{#                    </span>#}
+{#                </div>#}
+{#                <div class="info">#}
+{#                    <i class="fa-solid fa-star"></i>#}
+{#                    <span id="version_text" class="convo-title"></span>#}
+{#                </div>#}
             </div>
         </div>
         <div class="images hidden">
@@ -166,6 +166,14 @@
             </div>
         </div>
         <div class="conversation">
+            <div>
+                <a href="https://accounts.suitechsui.io/register?ref=115418836">
+                     <img height="150" width="380" alt="advert" src="/static/img/binance.png">
+                </a>
+                 <a href="https://curl.qcloud.com/6Qw5qjTa">
+                     <img height="150" width="380" alt="advert" src="/static/img/tencent.png">
+                </a>
+            </div>
             <textarea id="systemPrompt" class="box" placeholder="System prompt"></textarea>    
             <div id="messages" class="box"></div>
             <div class="toolbar">
